@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-      <head>
-<title>1</title>
-<meta charset="utf-8">
-<meta name="author" content="Баландин М.А. s0169595">
-</head>
-
-<ol>
-  <li><a href="http://example.com/">http</a></li>
-  <li><a href="https://example.com/">https</a></li>
-   <li><a href="ftp://example.com/">ftp</a></li>
-  <li><a href="ftp://user:password@adress.com/">login:password</a></li>
-  <li><a href="httр://ru.wikipedia.org/wiki/Кубанский_государственный_университет#Ссылки">Сылка на фрагмент сайта</a></li>
-  <li><a href="https://balandinmaxim.github.io/#top">Ссылка на фрагмент текущего сайта</a></li>
-  <li><a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет?sl=en&tl=ru">Ссылка с 2мя параметрами URL</a></li>
-  <li>
-  <ol>
-        <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">Оф. сайт КубГУ</a></li>
-        <li><a href="https://www.kubsu.ru/user" title="Страница для авторизации на сайте Кубанского государственного университета" >Авторизция на официальном сайте КубГУ</a></li>
-  </ol>
- <li> <a>http://example.com - wihtout href</a></li>
-  <li><a href="">Пустой_href</a></li>
-  <li><a href="https://www.google.ru/">Переход к поисковой системе гугл</a></li>
-  <li><a href="https://yandex.ru/" rel="nofollow">nofollow</a></li>
-  <li><!--noindex--><a href="http//:example.com">Ссылка без индексации</a><!--/noindex-->
-  <li><a href="https://yandex.ru/" rel="help">Контекстная информация</a></li>
-  <li><a href="https://yandex.ru/"><img src="https://icon2.cleanpng.com/20180620/wy/kisspng-yandex-internet-5b2aa1107b69c0.5570827015295204005055.jpg" alt="Логотип Яндекс"></a></li>
-      <li> 
-    <img src="https://uslugino.ru/img/105/296089.jpg" width="57" height="57" alt="tg" usemap="#tg">
-                <img src="https://cdn.wmaraci.com/blog/wikipedia-logo.png" style="width: 266px; height: 88px;" alt="Wiki">
-                <map name="tg">
-                    <area shape="circle" coords="63,40,50" href="https://web.telegram.org/k/" alt="linkTG">
-                </map>
-                <map name="wiki">
-                    <area shape="rect" coords="0,0,266,88" href="https://ru.wikipedia.org/" alt="linkWIKI">
-                </map>
-            </li>
-  <li><a href="example.html">Относительная ссылка</a></li>
-  <li><a href="/about/index.html">Ссылка about</a></li>
-  <li><a href="../index.html">Уровнем выше</a></li>
-  <li><a href="../../index.html">2мя уровнями выше текущего</a></li>
-  <li><a href="/">Сокращенная ссылка на главную</a></li>
-  <li><a href="/about">Сокращенная ссылка на внутреннюю</a></li>
-</ol>
-<br><form><label>Имя: <input name="name_polz" maxlength="25" size="25" value=""></label><br>
-        <br><label>email:<input name="email_polz" type="email" maxlength="128" size="40" placeholder="Введите ваш email"></label><br>
-        <br><label>Дата рождения: <input name="data_polz" type="date" value="2004-01-01"></label><br>
-        <br><label>Пол:<input name="pol" type="radio" checked="checked"> Мужской</label><label><input name="pol" type="radio"> Женский</label><br>
-        <br>Количество конечностей:
-        <label><input name="kol_kon" type="radio" checked>2</label>
-        <label><input name="kol_kon" type="radio" > 4</label>
-        <label><input name="kol_kon" type="radio">6</label>
-        <label><input name="kol_kon" type="radio">8</label><br>
-        <br><label>Суперспособности:<br>
-            <select name="super" multiple="multiple" size="3">
-                <option value="1">Бессмертие</option>
-                <option value="2">Прохождение сквозь стены</option>
-                <option value="3">Левитация</option>
-            </select></label><br>
-        <br><label>Поле для биографии:<br>
-            <textarea name="bio" cols="30" rows="20" maxlength="625">Биография персонажа</textarea>
-        </label><br>
-        <br><label>
-            С контрактом ознакомлен(а):
-            <input type="checkbox">
-        </label><br>
-        <br><Label>
-            <input type="submit" value="Отправить">
-        </Label></form></body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="calkulator.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid page" style="background-color: #e74ef5da">
+        <div class="container">
+        <div class="row">
+          <div class="col-5 offset-5 col-md-4 offset-md-1 order-2">
+            <div class="h-100 py-3">
+              <div id="line">
+                <a>Калькулятор стоимости</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 col-md-4 order-1">
+            <div class="h-100 py-3">
+              <div id="logo">
+                <img
+                  src="https://investorshub.advfn.com/uimage/uploads/2019/11/4/qnzrecalculator.gif"
+                  width="100"
+                  height="100"
+                  alt="name"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <body>
+    <div class="container">
+        <hr />
+            <div class="row mt-3 order-2 order-sm-3" style="background-color: #e74ef5da">
+                <div class="col-6 col-md-6">
+                <form>
+                    Введите стоимость товара:
+                    <p><input name="p1" type="text"  placeholder="Здеся"></p>
+                    Введите кол-во товара:
+                 <p><input name="p2" type="text"  placeholder="Тута"></p>
+        <div id="result">
+        </form>
+            </div>
+            <hr />
+            <button id="my-button">Кнопка</button>
+            <p id="otvet"></p>
+            </div>
+            </div>
+            
+        </div>
+    <div class="container-fluid page mt-3" style="background-color: #e74ef5da">
+        <footer class="footer" id="foot">
+          <h5>(с) Енокян Эрик 2022</h5>
+        </footer>
+    </div>
+  </body>
+</html>
